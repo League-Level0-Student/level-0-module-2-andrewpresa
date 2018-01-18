@@ -6,6 +6,7 @@ package random;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -39,7 +40,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
 			// Replace the names below with your images
 		
 			rockImage = new ImageIcon(getClass().getResource("rock.png"));
-			paperImage = new ImageIcon(getClass().getResource("paper.jpeg"));
+			paperImage = new ImageIcon(getClass().getResource("download.jfif"));
 			scissorsImage = new ImageIcon(getClass().getResource("scissors.jpeg"));
 
 		} catch (Exception ex) {
@@ -82,6 +83,8 @@ public class RockPaperScissors extends JPanel implements ActionListener{
 
         //3. Change oppenentSelection to be a random number between 0 and 2;
         int opponentSelection = 0;
+        Random opps = new Random();
+        opponentSelection = opps.nextInt(3);
         
         //4. Run the program again. Is the result different?
  

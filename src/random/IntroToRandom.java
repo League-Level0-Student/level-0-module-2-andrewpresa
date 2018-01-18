@@ -5,6 +5,8 @@ package random;
 
 import java.util.Random;
 
+import javax.naming.LimitExceededException;
+
 //1. Run the program.  What number appears in the console?
 //   Run it again. Is the number the same?
 
@@ -16,13 +18,16 @@ public class IntroToRandom {
 		//2. Now make r random. 
 		//   Create an object of the Random class
 		//   Hint: new Random().nextInt()
-
+		Random rob = new Random();
+        r = rob.nextInt(101);
+     r= rob.nextInt(51)+ 25;
 		//3. Limit the random number between 0 and 100
+
 
 		//4. Limit the random number between 25 and 75. Hint: (highest value - lowest value) + lowest value
 
 		//5. Challenge: Limit the random number between -222 and 88
-
+     r= rob.nextInt(311)+ -222 ;
 
 		
 		System.out.println(r); 
